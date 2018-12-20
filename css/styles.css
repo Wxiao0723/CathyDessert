@@ -1,0 +1,185 @@
+@charset "utf-8";
+/* CSS Document */
+html{
+	font-size: 62.5%
+	font:normal 100% "微软雅黑";
+}
+body{
+	background-image:url(../img/bg2.jpg);
+}
+* {
+	padding: 0px;
+	margin: 0px;
+}
+.container{
+	width: 90%;
+	margin: 0 auto 10px auto;
+	height:500px;
+}
+#logo{
+	display: inline-block;
+	width: 8%;
+	height: 60px;
+	top: 0;
+}
+#logo a h1{
+	font-size: 1.3rem;
+	color:white;
+	display: inline-block;
+	text-align: center;
+	margin: auto;
+	width: 100%;
+}
+#logo a{
+	width: 80%;
+	text-decoration: none;
+	margin: 20px 0;
+	line-height:60px;
+}
+#header{
+	width: 90%;
+	margin:0 auto;
+	height: 60px;
+}
+#search{
+	display: inline-block;
+	position: absolute;
+	top: 10px;
+	left: 70%;
+	width: 20%;
+}
+#search input[type="search"]{
+	font-family: "微软雅黑";
+	background:#f3f3f3;
+	border: solid 1px #ccc;
+	height: 40px;
+	line-height: 40px;
+	width: 80%;
+	font-size: 1.4em;
+	padding-left: 2%;
+	display: inline-block;
+	vertical-align: top;
+}
+#search input[type="submit"]{
+	font-family: "微软雅黑";
+	background-color: #B4B4B4;
+	color: #FFFFFF;
+	border: solid 1px #b4b4b4;
+	height:40px;
+	display: inline-block;
+	font-size: 1.4em;
+	width: 20%;
+} 
+#nav{
+	width: 100%;
+	height: 60px;
+	margin: 0 auto;
+	background-color:black;
+	display:inline-block;
+}
+#nav ul{
+	display: relative;
+	height: 60px;
+	width: 100%;
+}
+#nav ul li{
+	display: inline-block;
+	height: 60px;
+	line-height: 60px;
+	width: 7%;
+	font-size: 1.3em;
+}
+#nav ul li a{
+	display: inline-block;
+	line-height: 60px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 1.3rem;
+	transition: background 0.5s linear;
+	height:  60px;
+}
+#nav ul a:hover{
+	background-color: indianred;
+
+}
+.special{
+	width: 90%;
+	margin: 0 auto;
+}
+.article-section{
+	width: 100%;
+	margin-bottom: 20px;
+	border-bottom: #CCC dashed 1px;
+}
+.article-section section{
+	width: 30%;
+	height: 300px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 10px 1.25% 20px 1.25%;
+}
+.article-section h3{
+	margin: 20px auto 20px auto;
+	text-align: center;
+	font-family: "微软雅黑";
+	color:indianred;
+	font-size: 1.8em;
+}
+.special .article-section .recommend .image-box{
+	width: 60%;
+	height:240px;
+	margin: 0;
+	float: left;
+}
+.special .article-section .recommend .recommend-content{
+	width: 40%;
+	height: 240px;
+	margin-right: 0;
+	float: left;
+}
+.article-section .recommend img{
+	display: inline;
+	width: 100%;
+	height: 240px;
+	float: left;
+}
+.article-section .recommend .p1 p{
+	display: inline;
+	width:100%;
+	text-align: center;
+	vertical-align: top;
+	font-size: 1.4em;
+	color:darkgray;
+	text-decoration-line: line-through;
+}
+.article-section .recommend .p2 p{
+	display: inline;
+	width:100%;
+	vertical-align: top;
+	text-align: center;
+	font-size: 1.59em;
+	color:indianred;
+}
+footer section{
+	background-color: darkgray;
+	height: 30px;
+	margin: 0 auto;
+}
+footer a {
+	display:inline-block;
+	color: #fff;
+	text-decoration: none;
+	width: 10%;
+	text-align: right;
+	line-height: 30px;
+	font-size: 1.6em;
+	height: 40px;
+}
+#footer .container1{
+	width: 90%;
+	height:auto;
+	margin: auto;
+}
+
