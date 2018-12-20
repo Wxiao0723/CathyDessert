@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于我们</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ripples.js"></script>
+<script src="js/mouse.js"></script>
+<style type="text/css">
+@import url("./css/stylea.css");
+</style>
+</head>
+
+<body>
+	<!--页眉-->
+	<div id="header"></div>
+	<script>
+	$.get("header.tpl", function(result){      
+	      $("#header").html(result);
+	    });
+	</script>
+	<div id="text" style="width: 90%;margin: auto;margin-top: 10px;">
+		<p style="width: 100%;">Cathy甜品店是一家专业的港式甜品店，我们引入世界先进的健康理念，运用科学制作工艺及来至世界各地的优质原材料，制作出一系列绿色，新鲜，口感丰富，具有滋补功效的健康时尚甜品。
+		</p>
+	</div>
+
+	<div id="mv" style="width: 90%;margin: 20px auto;">
+		<div class="container" style="height:700px;width: 100%;">
+		<video controls="controls" loop="loop" style="width: 90%;height: 700px;margin-left: 5%;margin-right: 5%;">
+			<source src="./mv/ad.mp4" type="video/mp4">
+		</video>
+		</div>
+	</div>
+	<!--页脚-->
+	<div id="footer" style="margin: auto;height: 30px;">
+	<script>
+	$.get("footer.tpl", function(result){      
+	      $("#footer").html(result);
+	    });
+	</script>
+	</div>
+</body>
+</html>

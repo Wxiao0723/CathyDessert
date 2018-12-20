@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>口味分类</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ripples.js"></script>
+<script src="js/mouse.js"></script>
+<style type="text/css">
+@import url("./css/stylef.css");
+</style>
+</head>
+
+<body>
+	<!--页眉-->
+	<script type="text/javascript" color="0,0,255" opacity='0.9' zIndex="50" count="150" src="js/canvas-nest.js"></script>
+	<div id="header"></div>
+	<script>
+	$.get("header.tpl", function(result){      
+	      $("#header").html(result);
+	    });
+	</script>
+		<div class="category" id="category">
+			<h2>口味分类</h2>
+			<div class="name">
+			<ul>
+					<li><a href="category/c1.html" target="view_frame">魔幻分子系列</a></li><li>
+					<a href="category/c2.html" target="view_frame">港式经典系列</a></li><li>
+					<a href="category/c3.html" target="view_frame">欧式风情系列</a></li><li>
+					<a href="category/c4.html" target="view_frame">地道台式系列</a></li><li>
+					<a href="category/c5.html" target="view_frame">滋味饮品系列</a></li><li>
+					<a href="category/c6.html" target="view_frame">创意简餐系列</a></li>
+			</ul>
+			<iframe src="category/c1.html" name="view_frame" scrolling="no"></iframe>
+			</div>
+	</div>
+	<!--页脚-->
+	<div id="footer"></div>
+	<script>
+	$.get("footer.tpl", function(result){      
+	      $("#footer").html(result);
+	    });
+	</script>
+</body>
+</html>
+

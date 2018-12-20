@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cathy甜品</title>
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	<meta name="robots" content="all,follow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/imagebox.json"></script>
+	<!--<script src="js/indexchange.js"></script>
+	<script src="js/jquery.ripples.js"></script>
+	<script src="js/mouse.js"></script>-->
+	<script src="js/main.js"></script>
+	</head>
+<body>
+	<!--页眉-->
+	<div id="ad"></div>
+	<script type="text/javascript" color="0,0,255" opacity='0.9' zIndex="50" count="150" src="js/canvas-nest.js"></script>
+	<div id="header"></div>
+	<script>
+	$.get("header.tpl", function(result){      
+	      $("#header").html(result);
+	    });
+	</script>
+	<!--内容-->
+	<div class="wrap" id="wrap">
+		<ul id="pic">
+			 <li><img src="img/8.jpg" alt=""></li>
+             <li><img src="img/9.jpg" alt=""></li>
+      		 <li><img src="img/10.jpg" alt=""></li>
+		</ul>
+		<ol id="list">
+			<li class="active">1</li>
+			<li>2</li>
+			<li>3</li>
+		</ol>
+	</div>
+			<article>
+			<!--本月新品推荐-->
+				<section class="article-section" id="monthnew">
+				<h2 id="title1">本月新品推荐</h2>
+					<div class="image-box">
+						<ul id="json1"></ul>
+					</div>
+			</section>
+			<!--爆款美味-->
+			<section class="article-section" id="delicious">
+				<h2 id="title3" >爆款美味</h2>
+					<div class="image-box">
+					<ul id="json2"></ul>
+					</div>
+			</section>
+		</article>
+	<!--页脚-->
+	<div id="footer"></div>
+	<script>
+	$.get("footer.tpl", function(result){      
+	      $("#footer").html(result);
+	    });
+	</script>
+</body>
+</html>

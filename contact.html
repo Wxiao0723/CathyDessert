@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>联系我们</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ripples.js"></script>
+<script src="js/mouse.js"></script>
+<style type="text/css">
+@import url("./css/stylec.css");
+</style>
+<script src="js/formcheck.js"></script>
+</head>
+
+<body>
+	<!--页眉-->
+	<script type="text/javascript" color="0,0,255" opacity='0.9' zIndex="50" count="150" src="js/canvas-nest.js"></script>
+	<div id="header"></div>
+	<script>
+	$.get("header.tpl", function(result){      
+	      $("#header").html(result);
+	    });
+	</script>
+	<section class="contacts">
+		<fieldset class="contact-form">
+        	<legend class="form-subtitle">请填写以下内容</legend>
+			<form action="" method="post" id="contact" onsubmit="return check();">
+				<div class="form-row">
+					<label class="contact"><strong>姓名：</strong>
+					<input type="text" name="name" id="name" placeholder="必填" class="contact-input" required autofocus></label>
+				</div>	
+				<div class="form-row">
+					<label class="contact"><strong>性别：</strong></label>
+					<label><input name="sex" type="radio" id="sex" value="男" checked>男</label>
+					<label><input name="sex" type="radio" id="sex" value="女" >女</label>
+				</div>
+				<div class="form-row">
+					<label class="contact"><strong>年龄范围：</strong>
+						<select name="age" size="1" id="age">
+							<option value="1">18岁以下</option>
+							<option value="2" selected>18-28</option>
+							<option value="3">28-38</option>
+							<option value="4">38-48</option>
+							<option value="5">48岁以上</option>
+						</select>
+					</label>
+				</div>
+				<div class="form-row">
+					<label class="contact"><strong>喜欢的口味：</strong>
+						<label><input type="checkbox" name="taste" value="港式经典系列" id="taste1">港式经典系列</label>
+						<label><input type="checkbox" name="taste" value="欧式风情系列" id="taste2">欧式风情系列</label>
+						<label><input type="checkbox" name="taste" value="地道台式系列" id="taste3">地道台式系列</label>
+						<label><input type="checkbox" name="taste" value="创意简餐系列" id="taste4">创意简餐系列</label>
+						<label><input type="checkbox" name="taste" value="魔幻分子系列" id="taste5">魔幻分子系列</label>
+						<label><input type="checkbox" name="taste" value="滋味饮品系列" id="taste6">滋味饮品系列</label>
+					</label>
+				</div>
+				<div class="form-row">
+					<label class="contact"><strong>电子邮件：</strong>
+					<input type="email" name="dzyj" id="dzyj" placeholder="必填" class="contact-input" required>
+					</label>
+				</div>
+				<div class="form-row">
+					<label class="contact"><strong>手机or固话：</strong>
+					<input type="text" name="phone" id="phone" placeholder="必填" class="contact-input" required>
+					</label>
+				</div>
+				<div class="form-row">
+					<label class="contact"><strong>公司or学校：</strong>
+					<input type="text" name="address" id="address" placeholder="必填" class="contact-input" required>
+					</label>
+				</div>
+				<div class="form-row">
+					<label class="contact"><strong>内容：</strong>
+					<textarea name="content" id="content" class="contact-input" cols="20" rows="4"></textarea></label>
+				</div>
+				<div class="form-button">
+					<input type="reset" value="取消" class="cancel">
+					<input type="submit" value="提交" class="send">
+					</div>
+			</form>		
+				</fieldset>
+	</section>
+	<!--页脚-->
+	<div id="footer"></div>
+	<script>
+	$.get("footer.tpl", function(result){      
+	      $("#footer").html(result);
+	    });
+	</script>
+</body>
+</html>
+
